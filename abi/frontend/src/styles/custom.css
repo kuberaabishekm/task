@@ -1,0 +1,820 @@
+/* ========================================================
+   Hotel Listing Management System - Custom CSS
+   Exact match to MDB eCommerce Product Listing reference layout
+   Primary Blue: #2b74e2 / #1266f1
+   ======================================================== */
+
+:root {
+  --mdb-blue: #2b74e2;
+  --mdb-blue-hover: #1b5ecc;
+  --mdb-bg: #f8f9fa;
+  --mdb-border: #e0e0e0;
+  --mdb-border-light: #f0f0f0;
+  --mdb-text-dark: #262626;
+  --mdb-text-muted: #757575;
+  --mdb-green: #00b74a;
+  --mdb-red: #f93154;
+  --mdb-star: #f59e0b;
+}
+
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--mdb-bg);
+  color: var(--mdb-text-dark);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --------------------------------------------------------
+   1. TOP NAVBAR (White with Stylized MDB Logo & Search)
+   -------------------------------------------------------- */
+.mdb-top-navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--mdb-border);
+  padding: 0.75rem 0;
+}
+
+.mdb-navbar-brand {
+  font-weight: 800;
+  font-size: 1.75rem;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.brand-letter-m {
+  color: #1266f1;
+}
+
+.brand-letter-d {
+  color: #00b0ff;
+}
+
+.brand-letter-b {
+  color: #6200ea;
+}
+
+.mdb-search-wrapper {
+  max-width: 480px;
+  width: 100%;
+}
+
+.mdb-search-input {
+  border: 1px solid #ced4da;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.875rem;
+  box-shadow: none;
+}
+
+.mdb-search-input:focus {
+  border-color: var(--mdb-blue);
+  box-shadow: none;
+}
+
+.mdb-search-btn {
+  background-color: var(--mdb-blue);
+  border: 1px solid var(--mdb-blue);
+  color: #ffffff;
+  border-radius: 0 4px 4px 0;
+  padding: 0.45rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mdb-search-btn:hover {
+  background-color: var(--mdb-blue-hover);
+  border-color: var(--mdb-blue-hover);
+  color: #ffffff;
+}
+
+.mdb-nav-link {
+  background: none;
+  border: none;
+  color: #4f4f4f;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.15s ease;
+}
+
+.mdb-nav-link:hover {
+  color: var(--mdb-blue);
+}
+
+.mdb-cart-badge {
+  background-color: var(--mdb-blue);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.2rem;
+}
+
+/* --------------------------------------------------------
+   2. FULL-WIDTH BLUE PAGE HEADER
+   -------------------------------------------------------- */
+.mdb-page-header-banner {
+  background-color: var(--mdb-blue);
+  color: #ffffff;
+  padding: 1.5rem 0 1.25rem 0;
+  margin-bottom: 1.75rem;
+}
+
+.mdb-header-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+}
+
+.mdb-breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.mdb-breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.mdb-breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+}
+
+.mdb-breadcrumb-item a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.mdb-breadcrumb-item .separator {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.75rem;
+}
+
+.mdb-breadcrumb-item .active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------
+   3. LEFT SIDEBAR (MDB CARD FILTER PANEL)
+   -------------------------------------------------------- */
+.mdb-sidebar-card {
+  background: #ffffff;
+  border: 1px solid var(--mdb-border);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.mdb-sidebar-section {
+  border-bottom: 1px solid var(--mdb-border-light);
+}
+
+.mdb-sidebar-section:last-child {
+  border-bottom: none;
+}
+
+.mdb-section-header {
+  padding: 0.85rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mdb-related-list {
+  list-style: none;
+  padding: 0 1rem 0.85rem 1rem;
+  margin: 0;
+}
+
+.mdb-related-link {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0.3rem 0;
+  font-size: 0.85rem;
+  color: #4f4f4f;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.mdb-related-link:hover,
+.mdb-related-link.active {
+  color: var(--mdb-blue);
+  font-weight: 500;
+}
+
+.mdb-brands-list {
+  padding: 0 1rem 0.85rem 1rem;
+}
+
+.mdb-brand-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0;
+  font-size: 0.85rem;
+  color: #4f4f4f;
+  cursor: pointer;
+}
+
+.mdb-checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.mdb-brand-name {
+  font-size: 0.85rem;
+  color: #4f4f4f;
+}
+
+.mdb-brand-count {
+  font-size: 0.75rem;
+  color: #9e9e9e;
+  border: 1px solid #eeeeee;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* Price Range Slider & Inputs */
+.mdb-price-filter {
+  padding: 0 1rem 0.85rem 1rem;
+}
+
+.mdb-price-range {
+  accent-color: var(--mdb-blue);
+}
+
+.mdb-input-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #757575;
+  margin-bottom: 0.2rem;
+}
+
+.mdb-sidebar-input {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+}
+
+.mdb-apply-btn {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  color: #757575;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4rem 0.75rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.15s ease;
+}
+
+.mdb-apply-btn:hover {
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+/* Size Pill Badges */
+.mdb-size-grid {
+  padding: 0 1rem 0.85rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.mdb-size-pill {
+  border: 1px solid #ced4da;
+  background-color: #ffffff;
+  color: #4f4f4f;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.25rem 0.55rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mdb-size-pill:hover,
+.mdb-size-pill.active {
+  background-color: var(--mdb-blue);
+  border-color: var(--mdb-blue);
+  color: #ffffff;
+}
+
+/* Ratings */
+.mdb-ratings-list {
+  padding: 0 1rem 0.85rem 1rem;
+}
+
+.mdb-rating-row {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------
+   4. LISTING TOP BAR
+   -------------------------------------------------------- */
+.mdb-listing-top-bar {
+  background: transparent;
+  padding: 0 0 0.5rem 0;
+}
+
+.mdb-items-found-text {
+  font-size: 0.9rem;
+  color: #4f4f4f;
+}
+
+.mdb-items-found-text strong {
+  color: #262626;
+}
+
+.mdb-add-hotel-btn {
+  background-color: var(--mdb-blue);
+  border-color: var(--mdb-blue);
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 3px;
+}
+
+.mdb-add-hotel-btn:hover {
+  background-color: var(--mdb-blue-hover);
+  color: #ffffff;
+}
+
+.mdb-sort-select {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #4f4f4f;
+  padding: 0.3rem 1.75rem 0.3rem 0.65rem;
+}
+
+.mdb-view-toggle-group {
+  display: flex;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.mdb-view-btn {
+  background-color: #ffffff;
+  border: none;
+  color: #757575;
+  padding: 0.3rem 0.55rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mdb-view-btn:first-child {
+  border-right: 1px solid #ced4da;
+}
+
+.mdb-view-btn.active {
+  background-color: #eeeeee;
+  color: #262626;
+}
+
+/* --------------------------------------------------------
+   5. HOTEL / PRODUCT CARDS (HORIZONTAL EXACT MATCH)
+   -------------------------------------------------------- */
+.mdb-product-card {
+  background-color: #ffffff;
+  border: 1px solid var(--mdb-border);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.25rem;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+  overflow: hidden;
+}
+
+.mdb-product-card:hover {
+  border-color: #c5c5c5;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.09);
+}
+
+.mdb-card-img-wrap {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.mdb-product-img {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.mdb-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #262626;
+  text-decoration: none;
+  line-height: 1.3;
+  transition: color 0.15s ease;
+}
+
+.mdb-card-title:hover {
+  color: var(--mdb-blue);
+}
+
+.mdb-rating-num {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #4f4f4f;
+}
+
+.mdb-card-desc {
+  font-size: 0.825rem;
+  color: #757575;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.mdb-meta-tag {
+  font-size: 0.75rem;
+  color: #616161;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 0.15rem 0.45rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.mdb-price-main {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #262626;
+}
+
+.mdb-price-original {
+  font-size: 0.85rem;
+  color: var(--mdb-red);
+  text-decoration: line-through;
+}
+
+.mdb-shipping-free {
+  font-size: 0.8rem;
+  color: var(--mdb-green);
+  font-weight: 500;
+}
+
+.mdb-btn-buy {
+  background-color: var(--mdb-blue);
+  border: 1px solid var(--mdb-blue);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.mdb-btn-buy:hover {
+  background-color: var(--mdb-blue-hover);
+  border-color: var(--mdb-blue-hover);
+  color: #ffffff;
+}
+
+.mdb-btn-heart {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  color: #6c757d;
+  padding: 0.35rem 0.65rem;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mdb-btn-heart:hover,
+.mdb-btn-heart.active {
+  border-color: #ef4444;
+}
+
+/* --------------------------------------------------------
+   6. PAGINATION (<  1  2  3  4  5  >)
+   -------------------------------------------------------- */
+.mdb-pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.mdb-page-btn {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #757575;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mdb-page-btn:hover:not(:disabled):not(.active) {
+  background-color: #eeeeee;
+  color: #262626;
+}
+
+.mdb-page-btn.active {
+  background-color: var(--mdb-blue);
+  border-color: var(--mdb-blue);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.mdb-page-btn:disabled {
+  color: #bdbdbd;
+  cursor: not-allowed;
+  background-color: #fafafa;
+}
+
+/* --------------------------------------------------------
+   7. MDB FOOTER (BLUE 5-COLUMN FOOTER)
+   -------------------------------------------------------- */
+.mdb-footer {
+  background-color: var(--mdb-blue);
+  color: #ffffff;
+  margin-top: auto;
+}
+
+.mdb-footer-brand {
+  font-weight: 800;
+  font-size: 1.85rem;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: baseline;
+}
+
+.brand-sub-badge {
+  font-size: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+  letter-spacing: 0.5px;
+}
+
+.mdb-footer-copyright {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+.mdb-footer-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 0.85rem;
+}
+
+.mdb-footer-links li {
+  margin-bottom: 0.45rem;
+}
+
+.mdb-footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.mdb-footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.mdb-footer-text {
+  font-size: 0.825rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.45;
+}
+
+.mdb-newsletter-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px 0 0 3px;
+  font-size: 0.825rem;
+  padding: 0.4rem 0.75rem;
+}
+
+.mdb-newsletter-input:focus {
+  border-color: #ffffff;
+  box-shadow: none;
+}
+
+.mdb-newsletter-btn {
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 0 3px 3px 0;
+  padding: 0.4rem 0.85rem;
+}
+
+.mdb-newsletter-btn:hover {
+  background-color: #f5f5f5;
+  color: #111111;
+}
+
+.mdb-footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.mdb-payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.payment-card-badge {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+}
+
+.mdb-language-selector {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.825rem;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------
+   8. MODALS & TOASTS
+   -------------------------------------------------------- */
+.custom-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.custom-modal-dialog {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 650px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-modal-header {
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--mdb-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-modal-body {
+  padding: 1.25rem;
+  overflow-y: auto;
+}
+
+.custom-modal-footer {
+  padding: 0.85rem 1.25rem;
+  border-top: 1px solid var(--mdb-border);
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.image-upload-preview {
+  width: 100%;
+  height: 180px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+.image-upload-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.toast-container-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.custom-toast {
+  min-width: 280px;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.custom-toast.success { background-color: var(--mdb-green); }
+.custom-toast.error { background-color: var(--mdb-red); }
+.custom-toast.info { background-color: var(--mdb-blue); }
+
+/* Detail Page Specific */
+.hotel-detail-card {
+  background: #ffffff;
+  border: 1px solid var(--mdb-border);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.hotel-detail-img-main {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.map-container-box {
+  width: 100%;
+  height: 380px;
+  border: 1px solid var(--mdb-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
